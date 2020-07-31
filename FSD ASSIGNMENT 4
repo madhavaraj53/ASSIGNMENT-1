@@ -1,0 +1,31 @@
+ <!DOCTYPE html>
+<html lang="en" ng-app="">
+    <head>
+        <meta charset="UTF-8">
+        <title>AngularJS</title>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+        
+
+    </head>
+    <body>
+        <h1>Sample Application</h1>
+
+        <input type="text" ng-model="name">
+        <div>{{name}}</div>
+    </body>
+</html>
+[9:43 am, 31/07/2020] F NAVEENJI: <!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="">
+ 
+<p>ENTER THE CONTENT TO DISPLAY: <input type="text" ng-model="name"></p>
+<p>{{name}}</p>
+
+</div>
+
+</body>
+</html>
