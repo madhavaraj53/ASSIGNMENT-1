@@ -1,0 +1,56 @@
+ Assn5/beans.xml 
+ 
+@@ -0,0 +1,16 @@
+
+<?xml version = "1.0" encoding = "UTF-8"?> 
+
+<beans xmlns = "http://www.springframework.org/schema/beans" 
+
+xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance" 
+
+xsi:schemaLocation = "http://www.springframework.org/schema/beans"
+
+"http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+ <bean id = "helloWorld" class = "com.tutorialspoint.HelloWorld"> 
+
+<property name = "message" value = "Hello World!"/> </bean> 
+
+</beans> 
+
+ Assn5/helloworld.java 
+
+@@ -0,0 +1,12 @@
+package com.helloworld;
+
+public class HelloWorl {
+   private String message;
+
+   public void setMessage(String message){
+      this.message  = message;
+   }
+   public void getMessage(){
+      System.out.println("Your Message : " + message);
+   }
+} 
+
+Assn5/mainapp.java 
+
+@@ -0,0 +1,17 @@
+package com.main file; 
+import org.springframework.context.Application Context;
+ import org.springframework.context.support.Class PathXmlApplicationContext;
+ public class MainApp
+ {
+ public static void main(String[] args)
+ { 
+ApplicationContext context = new 
+
+ClassPathXmlApplicationContext("Beans.xml"); 
+
+HelloWorld obj = (HelloWorld) 
+
+context.getBean("helloWorld"); 
+obj.getMessage(); 
+} 
+} 
